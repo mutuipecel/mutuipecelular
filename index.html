@@ -6,29 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mutuípe Celular</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #1a1a1a;
+      background-color: #0d1a26;
       color: #fff;
-      padding: 20px;
+      padding: 20px 0;
       text-align: center;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+    header h1 {
+      font-size: 2rem;
     }
-    h1, h2 {
-      color: #1a1a1a;
+    .cta-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #1e90ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .hero {
+      background: #e8f0fe;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+    .feature-box {
+      flex: 1 1 250px;
+      max-width: 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .feature-box h3 {
+      margin-bottom: 10px;
+      color: #0d1a26;
+    }
+    .contact {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #e8f0fe;
+    }
+    .contact p {
+      margin: 10px 0;
     }
     footer {
-      background-color: #1a1a1a;
+      background-color: #0d1a26;
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -38,42 +85,47 @@
       color: #fff;
       text-decoration: none;
     }
-    .whatsapp {
-      color: green;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
   <header>
     <h1>Mutuípe Celular</h1>
-    <p>Seu ponto de confiança em tecnologia e assistência técnica</p>
+    <a href="https://wa.me/5575982432177" target="_blank" class="cta-button">Fale conosco no WhatsApp</a>
   </header>
 
-  <section>
-    <h2>Sobre a Loja</h2>
-    <p>A Mutuípe Celular é referência em tecnologia na região. Atuamos com venda de celulares novos e seminovos com garantia, sempre priorizando o atendimento justo e de confiança. Trabalhamos com as principais marcas do mercado: <strong>Apple, Motorola, Realme e Xiaomi</strong>.</p>
+  <section class="hero">
+    <h2>Tecnologia, garantia e confiança em um só lugar</h2>
+    <p>Trabalhamos com as melhores marcas e oferecemos assistência técnica especializada.</p>
   </section>
 
-  <section>
-    <h2>Assistência Técnica</h2>
-    <p>Prestamos serviços de conserto e manutenção para diversos modelos de celulares. Nossa equipe é treinada e usamos peças de qualidade para garantir o melhor resultado para o seu aparelho.</p>
+  <section class="features">
+    <div class="feature-box">
+      <h3>Marcas Premium</h3>
+      <p>Apple, Motorola, Realme e Xiaomi com garantia de qualidade.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Assistência Técnica</h3>
+      <p>Equipe qualificada para manutenção e reparo do seu celular.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Acessórios</h3>
+      <p>Capas, películas, carregadores, fones e muito mais.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Atendimento de Qualidade</h3>
+      <p>Somos referência em Mutuípe e região. Atendimento humanizado e rápido.</p>
+    </div>
   </section>
 
-  <section>
-    <h2>Acessórios</h2>
-    <p>Temos uma grande variedade de acessórios: capas, películas, carregadores, cabos, fones de ouvido e muito mais. Tudo com qualidade e preço justo.</p>
-  </section>
-
-  <section>
+  <section class="contact">
     <h2>Contato</h2>
-    <p>📍 Rua XXX, Centro — Mutuípe/BA</p>
-    <p>📞 WhatsApp: <span class="whatsapp">(75) 98243-2177</span></p>
+    <p>📍 Avenida Beira Rio, 11 — Mutuípe/BA</p>
+    <p>📞 WhatsApp: (75) 98243-2177</p>
     <p>📘 <a href="https://facebook.com/mutuipecelular" target="_blank">Facebook</a> | 📸 <a href="https://instagram.com/mutuipecelular" target="_blank">Instagram</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Mutuípe Celular. Todos os direitos reservados.</p>
+    <p>&copy; 2023 Mutuípe Celular. Todos os direitos reservados.</p>
     <div class="social">
       <a href="https://facebook.com/mutuipecelular" target="_blank">Facebook</a>
       <a href="https://instagram.com/mutuipecelular" target="_blank">Instagram</a>
